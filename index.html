@@ -10,16 +10,48 @@
 
         var generator = {
             
-            method1: function (question) {
-            var label = document.createElement('label');
-            label.innerHTML = question;
-            label.style.display = 'block';
-            document.body.appendChild(label);
-            }
+            header: function (header) {
+            var myheader = document.createElement('span');
+            myheader.innerHTML = header;
+            myheader.style.margin = '0 550px';
+            myheader.style.font = '16px Arial';
+            document.body.appendChild(myheader);
+            },
+            
+            question1: function (question1) {
+            var firstquestion = document.createElement('p');
+            firstquestion.innerHTML = question1;
+            firstquestion.style.margin = '10px 200px';
+            firstquestion.style.font = '17px Arial';
+            document.body.appendChild(firstquestion);
+            },
+            
+            question2: function (question2) {
+            var secondquestion = document.createElement('p');
+            secondquestion.innerHTML = question2;
+            secondquestion.style.margin = '90px 200px';
+            secondquestion.style.font = '17px Arial';
+            document.body.appendChild(secondquestion);
+            },
+            
+            question3: function (question3) {
+            var thirdquestion = document.createElement('p');
+            thirdquestion.innerHTML = question3;
+            thirdquestion.style.margin = '110px 200px';
+            thirdquestion.style.font = '17px Arial';
+            document.body.appendChild(thirdquestion);
+            },
+            
+            
+            
 
         }
 
-        generator.method1('Тест по программированию');
+        generator.header('Тест по программированию');
+        generator.question1('1. Вопрос №1');
+        generator.question2('2. Вопрос №2');
+        generator.question3('3. Вопрос №3');
+        
         
 
     </script>
