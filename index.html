@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dynamic page</title>
+</head>
+<body>
+   
+    <script>
+
+        var generator = {
+            
+            method1: function (question) {
+            var label = document.createElement('label');
+            label.innerHTML = question;
+            label.style.display = 'block';
+            document.body.appendChild(label);
+            }
+
+        }
+
+        generator.method1('Тест по программированию');
+        
+
+    </script>
+ 
+</body>
+</html>
